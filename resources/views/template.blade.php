@@ -18,7 +18,14 @@
   </head>
   <body>
     <h1 class="text-info text-center pt-3">Bismillahir Rahmanir Rahim</h1>
-    <h1 class="text-success text-center py-2">Middleware in Laravel v8 <a class="btn btn-outline-warning" href="{{ route('login') }}">Login</a></h1>
+    <h1 class="text-success text-center py-2">Middleware in Laravel v8
+        <a class="btn btn-outline-warning" href="{{ route('login') }}">Login</a>
+        <a class="btn btn-outline-warning" href="{{ route('logout') }}" onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();">Logout</a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
+    </h1>
 
 
 

@@ -1,0 +1,7 @@
+Create a DB: middleware_laravel_v8
+Import middleware_laravel_v8.sql into DB;
+
+User Name: hackedgdown@gmail.com
+pass: 123456789
+
+Here we go.....

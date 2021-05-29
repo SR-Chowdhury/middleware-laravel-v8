@@ -17,6 +17,7 @@ class CustomMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        // If user not logged in
         if (!Auth::check()) {
             return redirect()->to('/');
         }
